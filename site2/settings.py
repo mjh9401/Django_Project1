@@ -81,6 +81,9 @@ DATABASES = {
         'PASSWORD': 'sbs1234', # DBMS 접속 비번
         'HOST': '127.0.0.1', # DBMS 주소
         'PORT': '3306', # DBMS 포트
+        'OPTIONS': {
+            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'",
+        }
     }
 }
 
